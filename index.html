@@ -1,78 +1,216 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Senflore Hospitality LLP</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 
-body{
-font-family: Arial, sans-serif;
+*{
 margin:0;
 padding:0;
-line-height:1.7;
-background:#f5f5f5;
-color:#222;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#0f1115;
+color:white;
+line-height:1.8;
 }
 
 header{
-background:#111827;
-color:white;
-padding:40px 20px;
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.7)),
+url('project.jpeg');
+background-size:cover;
+background-position:center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
 text-align:center;
+padding:20px;
 }
 
 header h1{
-margin:0;
-font-size:38px;
+font-size:68px;
+font-weight:700;
+letter-spacing:2px;
+margin-bottom:20px;
+}
+
+header p{
+font-size:22px;
+max-width:900px;
+color:#ddd;
+}
+
+.hero-btn{
+margin-top:35px;
+display:inline-block;
+padding:15px 35px;
+background:#c8a96b;
+color:#111;
+font-weight:600;
+text-decoration:none;
+border-radius:50px;
+transition:0.3s;
+}
+
+.hero-btn:hover{
+background:white;
+transform:translateY(-3px);
 }
 
 nav{
-background:#1f2937;
-padding:15px;
+position:fixed;
+top:0;
+width:100%;
+background:rgba(0,0,0,0.75);
+backdrop-filter:blur(8px);
+padding:18px 0;
+z-index:999;
 text-align:center;
 }
 
 nav a{
 color:white;
 text-decoration:none;
-margin:0 15px;
-font-weight:bold;
+margin:0 18px;
+font-size:15px;
+font-weight:500;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#c8a96b;
 }
 
 section{
-background:white;
-margin:20px;
+padding:90px 10%;
+}
+
+.section-title{
+font-size:42px;
+margin-bottom:20px;
+color:#c8a96b;
+text-align:center;
+}
+
+.section-text{
+text-align:center;
+max-width:950px;
+margin:auto;
+color:#ccc;
+margin-bottom:60px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#1a1d24;
 padding:30px;
-border-radius:10px;
-box-shadow:0 2px 8px rgba(0,0,0,0.08);
+border-radius:18px;
+transition:0.3s;
+border:1px solid rgba(255,255,255,0.06);
 }
 
-h2{
-color:#111827;
-border-bottom:2px solid #ddd;
-padding-bottom:10px;
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 12px 30px rgba(0,0,0,0.35);
 }
 
-ul{
-padding-left:20px;
+.card h3{
+margin-bottom:15px;
+color:#c8a96b;
+}
+
+.project-image{
+width:100%;
+border-radius:20px;
+margin-top:40px;
+box-shadow:0 10px 30px rgba(0,0,0,0.5);
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+margin-top:50px;
+}
+
+.feature-box{
+background:#181b22;
+padding:30px;
+border-radius:16px;
+}
+
+.feature-box h4{
+color:#c8a96b;
+margin-bottom:12px;
+font-size:20px;
+}
+
+.location-box{
+margin-top:50px;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,0.5);
+}
+
+.contact-box{
+background:#181b22;
+padding:40px;
+border-radius:20px;
+text-align:center;
+max-width:800px;
+margin:auto;
+}
+
+.contact-box p{
+margin-top:15px;
+color:#ccc;
 }
 
 footer{
-background:#111827;
-color:white;
+background:black;
+padding:35px 20px;
 text-align:center;
-padding:20px;
-margin-top:30px;
+color:#aaa;
+margin-top:80px;
 }
 
-.highlight{
-background:#eef2ff;
-padding:15px;
-border-left:5px solid #4f46e5;
-margin-top:15px;
+@media(max-width:768px){
+
+header h1{
+font-size:42px;
+}
+
+header p{
+font-size:18px;
+}
+
+nav a{
+display:inline-block;
+margin:8px;
+font-size:14px;
+}
+
+.section-title{
+font-size:32px;
+}
+
 }
 
 </style>
@@ -80,193 +218,184 @@ margin-top:15px;
 
 <body>
 
-<header>
-<h1>SENFLORE HOSPITALITY LLP</h1>
-<p>Modern Commercial & Hospitality Infrastructure Development</p>
-</header>
-
 <nav>
 <a href="#home">Home</a>
 <a href="#about">About</a>
 <a href="#project">Project</a>
 <a href="#studio">Studio Spaces</a>
-<a href="#rera">RERA</a>
 <a href="#location">Location</a>
 <a href="#contact">Contact</a>
 </nav>
 
-<section id="home">
-<h2>Welcome to Senflore Hospitality LLP</h2>
+<header id="home">
+
+<h1>ROCK ONE SQUARE</h1>
 
 <p>
-Senflore Hospitality LLP is engaged in the development of modern commercial,
-hospitality, and studio infrastructure with a focus on quality, sustainability,
-transparency, and customer satisfaction.
+Premium Commercial & Hospitality Development by
+Senflore Hospitality LLP
 </p>
 
+<a href="#project" class="hero-btn">Explore Project</a>
+
+</header>
+
+<section id="about">
+
+<h2 class="section-title">About Senflore Hospitality LLP</h2>
+
+<p class="section-text">
+Senflore Hospitality LLP is focused on developing premium commercial,
+hospitality, and mixed-use infrastructure aligned with modern urban
+development standards, sustainability, and long-term value creation.
+</p>
+
+<div class="cards">
+
+<div class="card">
+<h3>Vision</h3>
 <p>
-Our upcoming development, <strong>Rock One Square</strong>, is envisioned as a
-contemporary commercial destination integrating retail, commercial,
-hospitality, and studio spaces designed to meet evolving urban and business requirements.
+To create premium commercial and hospitality developments delivering
+modern infrastructure and enhanced user experience.
 </p>
-
-<div class="highlight">
-The project aims to provide a professionally planned environment with modern amenities,
-efficient infrastructure, and high functional utility.
 </div>
+
+<div class="card">
+<h3>Mission</h3>
+<p>
+To deliver quality-driven, sustainable, future-ready commercial and
+studio developments with transparency and professionalism.
+</p>
+</div>
+
+<div class="card">
+<h3>Development Focus</h3>
+<p>
+Commercial spaces, retail outlets, hospitality components, office
+spaces, and modern studio infrastructure.
+</p>
+</div>
+
+</div>
+
 </section>
 
 <section id="project">
-<h2>Project Highlights</h2>
-<div style="text-align:center; margin-bottom:25px;"> <img src="project.jpeg" alt="Rock One Square Project" style="width:100%; max-width:900px; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.2);"> </div><h3>Rock One Square</h3>
 
-<ul>
-<li><strong>Project Type:</strong> Commercial Development</li>
-<li><strong>Project Name:</strong> Rock One Square</li>
-<li><strong>Land Area:</strong> 3617 Square Meters</li>
-<li><strong>Status:</strong> Upcoming Project</li>
-<li><strong>Promoter:</strong> Senflore Hospitality LLP</li>
-</ul>
+<h2 class="section-title">Rock One Square</h2>
 
-<h3>Proposed Components</h3>
-
-<ul>
-<li>Commercial spaces</li>
-<li>Retail outlets</li>
-<li>Office spaces</li>
-<li>Studio units</li>
-<li>Hospitality spaces</li>
-<li>Parking facilities</li>
-<li>Modern façade and architecture</li>
-<li>Fire and life safety systems</li>
-<li>Utility and infrastructure management</li>
-</ul>
-</section>
-
-<section id="about">
-<h2>About Us</h2>
-
-<h3>Company Profile</h3>
-
-<p>
-Senflore Hospitality LLP is focused on developing professionally managed
-commercial, hospitality, and mixed-use infrastructure projects aligned with
-modern urban development standards.
+<p class="section-text">
+A contemporary commercial and hospitality destination envisioned to
+integrate retail, office, hospitality, and studio spaces within a
+modern urban environment.
 </p>
 
-<p>
-The company is committed to delivering developments that combine functional planning,
-commercial viability, quality construction, and sustainable infrastructure practices.
-</p>
+<img src="project.jpeg" class="project-image">
 
-<h3>Vision</h3>
+<div class="features">
 
-<p>
-To create premium commercial and hospitality developments that deliver long-term value,
-modern infrastructure, and enhanced user experience.
-</p>
+<div class="feature-box">
+<h4>Commercial Development</h4>
+<p>Modern retail and commercial infrastructure with efficient planning.</p>
+</div>
 
-<h3>Mission</h3>
+<div class="feature-box">
+<h4>Studio Spaces</h4>
+<p>Flexible studio units with contemporary architectural standards.</p>
+</div>
 
-<ul>
-<li>To deliver quality-driven developments</li>
-<li>To maintain transparency and regulatory compliance</li>
-<li>To develop sustainable and future-ready infrastructure</li>
-<li>To provide professionally planned commercial and studio spaces</li>
-</ul>
-</section>
+<div class="feature-box">
+<h4>Hospitality Spaces</h4>
+<p>Professionally designed hospitality-oriented development components.</p>
+</div>
 
-<section>
-<h2>Project Details</h2>
+<div class="feature-box">
+<h4>Modern Infrastructure</h4>
+<p>Integrated utilities, parking, fire safety, and infrastructure systems.</p>
+</div>
 
-<h3>Rock One Square</h3>
+<div class="feature-box">
+<h4>Land Area</h4>
+<p>3617 Square Meters strategically planned for mixed-use development.</p>
+</div>
 
-<p>
-Rock One Square is a proposed commercial and hospitality-oriented development planned
-to include retail, commercial, office, hospitality, and studio components within
-a modern integrated environment.
-</p>
+<div class="feature-box">
+<h4>Project Status</h4>
+<p>Upcoming premium commercial development project.</p>
+</div>
 
-<p>The project is being developed with emphasis on:</p>
+</div>
 
-<ul>
-<li>Efficient space planning</li>
-<li>Modern architecture</li>
-<li>Accessibility and circulation</li>
-<li>Commercial functionality</li>
-<li>Infrastructure efficiency</li>
-<li>User convenience and safety</li>
-</ul>
-
-<p>
-Project specifications, approvals, plans, and development updates shall be updated
-periodically in accordance with applicable regulations.
-</p>
 </section>
 
 <section id="studio">
-<h2>Studio Spaces</h2>
 
-<p>
-The project proposes thoughtfully designed studio spaces intended to support modern urban
-requirements, flexible usage, and efficient utilization.
+<h2 class="section-title">Studio Spaces</h2>
+
+<p class="section-text">
+Thoughtfully designed studio spaces planned for modern urban
+requirements, efficient layouts, utility optimization,
+and flexible usage.
 </p>
 
-<p>The studio component is planned with consideration for:</p>
-
-<ul>
-<li>Functional layouts</li>
-<li>Modern utility provisions</li>
-<li>Efficient circulation planning</li>
-<li>Contemporary architectural standards</li>
-</ul>
-
-<p>
-Further specifications and details shall be updated as per approved plans and statutory permissions.
-</p>
 </section>
 
-<section id="rera">
-<h2>RERA Information</h2>
+<section id="location">
 
-<h3>Regulatory Information</h3>
+<h2 class="section-title">Project Location</h2>
 
-<p>
-Project approvals, registration details, plans, specifications, and statutory disclosures
-shall be updated in accordance with applicable RERA guidelines and regulatory requirements.
+<p class="section-text">
+Rock One Square<br>
+Raj Nagar Extension, Ghaziabad, Uttar Pradesh
 </p>
 
-<h3>Disclaimer</h3>
+<div class="location-box">
 
-<p>
-The information provided on this website is for general informational purposes only.
-All plans, layouts, specifications, amenities, dimensions, and facilities are subject
-to approvals from competent authorities and may change in compliance with statutory regulations.
-</p>
+<iframe
+src="https://maps.google.com/maps?q=28.7064727,77.4354701&z=16&output=embed"
+width="100%"
+height="500"
+style="border:0;"
+allowfullscreen=""
+loading="lazy">
+</iframe>
 
-<p>
-RERA registration details shall be updated upon approval from the concerned authority.
-</p>
+</div>
+
 </section>
-<section id="location"> <h2>Project Location</h2> <p>Rock One Square, Raj Nagar Extension, Ghaziabad, Uttar Pradesh</p> <div style="width:100%; max-width:900px; margin:auto;"> <iframe src="https://maps.google.com/maps?q=Rock%20One%20Square%20Raj%20Nagar%20Extension%20Ghaziabad&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="450" style="border:0; border-radius:10px;" allowfullscreen="" loading="lazy"> </iframe> </div> </section>  
+
 <section id="contact">
-<h2>Contact Us</h2>
 
-<p><strong>SENFLORE HOSPITALITY LLP</strong></p>
+<h2 class="section-title">Contact Us</h2>
 
-<p>Email: senflorehospitalityllp@gmail.com</p>
+<div class="contact-box">
+
+<h3>SENFLORE HOSPITALITY LLP</h3>
 
 <p>
-For project inquiries, commercial information, or regulatory details,
-please contact us through the above email address.
+For project inquiries, commercial information,
+and regulatory details:
 </p>
+
+<p>
+Email: senflorehospitalityllp@gmail.com
+</p>
+
+</div>
+
 </section>
 
 <footer>
-<p>© 2026 Senflore Hospitality LLP. All Rights Reserved.</p>
-<p>Designed for project information and regulatory compliance purposes.</p>
+
+<p>
+© 2026 Senflore Hospitality LLP. All Rights Reserved.
+</p>
+
+<p>
+Designed for project information and regulatory compliance purposes.
+</p>
+
 </footer>
 
 </body>
 </html>
-```
